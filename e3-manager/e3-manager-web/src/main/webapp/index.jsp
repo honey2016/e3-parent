@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    hello 宜立方哈哈哈
+    hello 宜立方
 </body>
 </html>
