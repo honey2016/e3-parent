@@ -9,12 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public abstract class ItemController {
+public class ItemController {
 
     @Autowired
     private ItemService itemService;
 
     @RequestMapping("item/{itemId}")
     @ResponseBody
-    public abstract TbItem getItemById(@PathVariable Long itemId);
+    public TbItem getItemById(@PathVariable Long itemId){
+        return itemService.getItemById(itemId);
+    }
 }
