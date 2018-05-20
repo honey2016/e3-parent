@@ -11,7 +11,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>e3-manager-service</artifactId>
-    <packaging>war</packaging>    <dependencies>
+    <packaging>war</packaging>
+    <dependencies>
+        <dependency>
+            <artifactId>e3-manager-pojo</artifactId>
+            <groupId>cn.e3mall</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <artifactId>e3-manager-dao</artifactId>
             <groupId>cn.e3mall</groupId>
@@ -76,4 +82,19 @@
             <artifactId>zkclient</artifactId>
         </dependency>
     </dependencies>
+
+    <!-- 安装war包插件 -->
+    <build>
+        <finalName>e3_manager_service</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
