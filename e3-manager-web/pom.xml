@@ -17,6 +17,36 @@
             <groupId>cn.e3mall</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
         <!-- JSP相关 -->
         <dependency>
             <groupId>jstl</groupId>
@@ -56,20 +86,7 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>4.2.4.RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-        </dependency>
+
     </dependencies>
     <build>
         <plugins>
@@ -79,7 +96,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
                     <path>/</path>
-                    <port>8080</port>
+                    <port>8081</port>
                 </configuration>
             </plugin>
         </plugins>

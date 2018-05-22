@@ -81,11 +81,13 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+        </dependency>
     </dependencies>
-
-    <!-- 安装war包插件 -->
+    <!-- 配置tomcat插件 -->
     <build>
-        <finalName>e3_manager_service</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -97,4 +99,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
