@@ -56,8 +56,8 @@
             <artifactId>slf4j-log4j12</artifactId>
         </dependency>
         <dependency>
-            <groupId>fastdfa_client</groupId>
-            <artifactId>fastdfa_client</artifactId>
+            <groupId>fastdfs_client</groupId>
+            <artifactId>fastdfs_client</artifactId>
             <version>1.25</version>
         </dependency>
     </dependencies>

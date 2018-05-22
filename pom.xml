@@ -12,7 +12,6 @@
         <module>e3-common</module>
         <module>e3-manager</module>
         <module>e3-manager-web</module>
-        <module>fastdfs_client</module>
     </modules>
 
     <dependencies>
