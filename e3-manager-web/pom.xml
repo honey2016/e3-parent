@@ -86,10 +86,10 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
+        <!--文件上传组件 -->
         <dependency>
-            <groupId>fastdfs_client</groupId>
-            <artifactId>fastdfs_client</artifactId>
-            <version>1.25</version>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
         </dependency>
     </dependencies>
     <build>
