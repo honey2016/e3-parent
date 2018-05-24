@@ -23,7 +23,7 @@ public class ItemServiceImpl implements ItemService {
     @Autowired
     private TbItemMapper tbItemMapper;
     @Autowired
-    private TbItemDescMapper tbItemDescMapper;
+    private TbItemDescMapper itemDescMapper;
 
     @Override
     public TbItem getItemById(long itemId) {
@@ -61,14 +61,14 @@ public class ItemServiceImpl implements ItemService {
         //向商品表插入数据
         tbItemMapper.insert(item);
         //创建一个商品描述对应的pojo对象
-        TbItemDesc tbItemDesc = new TbItemDesc();
+        TbItemDesc itemDesc = new TbItemDesc();
         //补全属性
-        tbItemDesc.setItemId(itemId);
-        tbItemDesc.setItemDesc(desc);
-        tbItemDesc.setCreated(new Date());
-        tbItemDesc.setUpdated(new Date());
+        itemDesc.setItemId(itemId);
+        itemDesc.setItemDesc(desc);
+        itemDesc.setCreated(new Date());
+        itemDesc.setUpdated(new Date());
         //向商品描述插入数据
-        tbItemMapper.insert(tbItemDesc);
+        itemDescMapper.insert(itemDesc);
         //返回成功
         return E3Result.ok();
     }
